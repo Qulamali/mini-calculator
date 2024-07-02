@@ -1,0 +1,89 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background: #134E5E;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.calculator {
+    width: 300px;
+    margin: 120px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    .inputs {
+        padding: 10px;
+
+        input {
+            border-radius: 50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            margin-bottom: 10px;
+            outline: none;
+            border: none;
+            padding: 10px 30px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px;
+
+        button {
+            background-color: #f5f5f5;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background: #2BC0E4;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #EAECC6, #2BC0E4);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.5s all ease;
+            font-size: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            &:hover {
+                background: -webkit-linear-gradient(to right,#2BC0E4 , #EAECC6);
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #2BC0E4 , #EAECC6);
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .result {
+        color: white;
+        text-align: center;
+    }
+}
